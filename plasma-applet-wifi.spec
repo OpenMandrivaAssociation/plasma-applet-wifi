@@ -7,7 +7,7 @@ License:        GPLv2+
 Group:          Graphical desktop/KDE
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source0:        79476-plasma-wifi-%version.tgz
-BuildRequires:  kdebase4-workspace-devel
+BuildRequires:  plasma-devel
 
 %description
 Plasma applet that allow to look your wifi signal strengh.
@@ -28,8 +28,8 @@ Plasma applet that allow to look your wifi signal strengh.
 %make
 
 %install
-cd build
-make DESTDIR=%buildroot install
+rm -fr %buildroot
+%makeinstall_std -C build
 
 %clean
 %{__rm} -rf "%{buildroot}"
