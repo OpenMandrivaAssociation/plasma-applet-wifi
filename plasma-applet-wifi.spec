@@ -1,7 +1,7 @@
 Name:           plasma-applet-wifi
 Summary:        Plasma applet that allow to look your wifi signal strengh
 Version:        0.5
-Release:        %mkrel 1 
+Release:        %mkrel 2
 Url:            http://www.kde-look.org/content/show.php/Plasma+WiFi?content=79476 
 License:        GPLv2+
 Group:          Graphical desktop/KDE
