@@ -8,6 +8,8 @@ Group:          Graphical desktop/KDE
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source0:        79476-plasma-wifi-%version.tgz
 Patch0:         plasma-wifi-fix-cmake.patch
+# Fix categories according to http://techbase.kde.org/Projects/Plasma/PIG#Category_Names
+Patch1:         plasma-wifi-fix-categories.patch
 BuildRequires:  plasma-devel
 
 %description
@@ -24,6 +26,7 @@ Plasma applet that allow to look your wifi signal strengh.
 %prep
 %setup -q -n plasma-wifi-%version 
 %patch0 -p1
+%patch1 -p0
 
 %build
 %cmake_kde4
