@@ -10,6 +10,7 @@ Source0:        79476-plasma-wifi-%version.tgz
 Patch0:         plasma-wifi-fix-cmake.patch
 # Fix categories according to http://techbase.kde.org/Projects/Plasma/PIG#Category_Names
 Patch1:         plasma-wifi-fix-categories.patch
+BuildRequires:	make
 BuildRequires:  plasma-devel
 Provides:       plasma-applet
 %description
